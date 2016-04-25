@@ -1,0 +1,144 @@
+
+body {
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+}
+
+header {
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FFC107;
+}
+
+.header-container {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 19px;
+  line-height: 58px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.menu-container {
+  width: 300px;
+  height: 100%;
+  transform: translateX(-103%);
+  background: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transition: all 200ms ease-in;
+  z-index: 100;
+  will-change: transform;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.4);
+}
+
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  transform: translateX(-103%);
+}
+
+.menu-list {
+  width: inherit;
+  height: inherit;
+}
+
+.menu-list li {
+  padding: 20px;
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  background: #e7e7e7;
+}
+
+.menu-logo {
+  font-size: 25px;
+  height: 56px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+  line-height: 56px;
+}
+
+.menu-icon {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  z-index: 10;
+}
+
+.menu-icon:active,
+.menu-icon:hover {
+  opacity: 0.9;
+}
+
+.menu-icon svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.main-container {
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 50px auto;
+  margin-bottom: 30px;
+}
+
+.sample div,
+.avatar,
+.sample-container {
+  background: #e7f6fb;
+}
+
+.sample div {
+  margin: 15px auto;
+  width: 70%;
+  height: 10px;
+}
+
+.sample div:first-child {
+  width: 60%;
+}
+
+.sample-container {
+  width: 90%;
+  height: 300px;
+  border-radius: 3px;
+  margin: 30px auto;
+}
