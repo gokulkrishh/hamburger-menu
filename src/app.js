@@ -4,14 +4,15 @@ var $menuOverlay = document.querySelector(".menu-overlay");
 
 function toggleMenu() {
   var menuStyle = $menuContainer.style.transform;
-  var overlayStyle = $menuOverlay.style.transform;
   if (menuStyle === "translateX(-103%)" || menuStyle === "") {
     $menuContainer.style.transform = "translateX(0)";
-    $menuOverlay.style.transform = "translateX(0)";
+    $menuOverlay.style.visibility = "visible";
+    document.body.style.overflow = "hidden";
   }
   else {
     $menuContainer.style.transform = "translateX(-103%)";
-    $menuOverlay.style.transform = "translateX(-103%)";
+    $menuOverlay.style.visibility = "";
+    document.body.style.overflow = "";
   }
 }
 
