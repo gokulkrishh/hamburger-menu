@@ -72,7 +72,7 @@ Just by using CSS for animations
 
 Result is a hamburger menu in 60fps, see the timeline recording done in chrome below.
 
-![Chrome Timeline Recording](https://raw.githubusercontent.com/gokulkrishh/hamburger-menu/master/timeline-recording.png)
+![Chrome Timeline Recording](https://github.com/gokulkrishh/hamburger-menu/blob/master/timeline-screenshot.png)
 
 #### References
 
