@@ -2,6 +2,8 @@
 
 *Creating and auditing a hamburger menu to result in 60fps animation*
 
+## [Demo](http://gokulkrishh.github.io/demo/hamburger-menu/)
+
 ![hamburger menu](https://raw.githubusercontent.com/gokulkrishh/hamburger-menu/master/hamburger-menu.gif)
 
 ### Why ?
@@ -67,8 +69,6 @@ Just by using CSS for animations
 ```+``` little javascript
 
 ### [source code](https://github.com/gokulkrishh/hamburger-menu/blob/master/src)
-
-### [Demo]()
 
 Result is a hamburger menu in 60fps, see the timeline recording done in chrome below.
 
