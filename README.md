@@ -74,6 +74,10 @@ Result is a hamburger menu in 60fps, see the timeline recording done in chrome b
 
 ![Chrome Timeline Recording](https://github.com/gokulkrishh/hamburger-menu/blob/master/timeline-screenshot.png)
 
+### Auditing using JS
+
+WIP
+
 #### References
 
 - [CSS-Animations](http://gokulkrishh.github.io/2014/08/28/CSS3-Animations.html)
