@@ -48,7 +48,7 @@
       hideMenu();
     }
   }
-  
+
   function touchStart(event) {
     if (!isMenuOpen()) {
       return;

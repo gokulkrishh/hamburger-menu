@@ -47,9 +47,9 @@ Just by using CSS for animations
   position: fixed;
   bottom: 0;
   top: 0;
-  transition: all 200ms ease-in; //creates a smooth transition
-  transform: translateX(-103%); //to hide menu
-  will-change: transform; //hint to browser about upcoming transformation
+  transition: all 200ms ease-in; /* creates a smooth transition */
+  transform: translateX(-103%); /* to hide menu */
+  will-change: transform; /* hint to browser about upcoming transformation */
 }
 
 .menu-overlay {
@@ -62,7 +62,7 @@ Just by using CSS for animations
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 99;
-  transform: translateX(-103%);
+  visibility: hidden; /* to hide overlay */
 }
 ```
 
