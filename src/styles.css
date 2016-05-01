@@ -10,7 +10,7 @@ header {
   background-color: #FFC107;
 }
 
-.header-container {
+.header__container {
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   display: -webkit-box;
@@ -19,32 +19,34 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: inherit;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-header h1 {
+.header h1 {
   font-size: 19px;
   line-height: 58px;
   padding-left: 10px;
   color: #fff;
 }
 
-.menu-container {
+.menu {
   width: 300px;
   height: 100%;
-  transform: translateX(-103%);
   background: #fff;
   position: fixed;
   top: 0;
   bottom: 0;
-  transition: all 200ms ease-in;
-  z-index: 100;
   will-change: transform;
+  transition: transform 0.33s cubic-bezier(0, 0, 0.30, 1);
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transform: translateX(-103%);
 }
 
-.menu-overlay {
+.menu--show {
+  transform: translateX(0);
+}
+
+.menu__overlay {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -53,49 +55,63 @@ header h1 {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 99;
-  transform: translateX(-103%);
+  transition: opacity 0.15s cubic-bezier(0, 0, 0.30, 1);
+  visibility: hidden;
+  opacity: 0;
 }
 
-.menu-list {
+.menu__overlay--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__list {
   width: inherit;
   height: inherit;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-.menu-list li {
+.menu__list li {
   padding: 20px;
   color: rgba(0,0,0,0.87);
   cursor: pointer;
 }
 
-.menu-list li:hover {
+.menu__list li:hover,
+.menu__list li:active {
   background: #e7e7e7;
 }
 
-.menu-logo {
-  font-size: 25px;
-  height: 56px;
-  padding-left: 20px;
-  border-bottom: 1px solid #ddd;
-  line-height: 56px;
+.menu__list a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.menu-icon {
+.menu__header {
+  height: 150px;
+  background: #FFC107;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu__icon {
   width: 48px;
   height: 48px;
   text-align: center;
   position: relative;
-  top: 5px;
+  margin: 4px;
   display: inline-block;
-  z-index: 10;
 }
 
-.menu-icon:active,
-.menu-icon:hover {
-  opacity: 0.9;
+.menu__icon:focus,
+.menu__icon:hover {
+  opacity: 0.8;
+  outline: 1px solid #fff;
 }
 
-.menu-icon svg {
+.menu__icon svg {
   position: absolute;
   left: 0;
   right: 0;
@@ -103,6 +119,8 @@ header h1 {
   top: 0;
   margin: auto;
 }
+
+/* PLACEHOLDER CSS - ingore below css */
 
 .main-container {
   margin-top: 56px;

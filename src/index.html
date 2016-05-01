@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium&amp;lang=en" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="menu-icon">
+  <header class="header">
+    <div class="header__container">
+      <!-- svg hamburger icon -->
+      <div class="menu__icon">
         <svg width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
           <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
         </svg>
@@ -21,19 +22,22 @@
     </div>
   </header>
 
-  <div class="menu-container">
-    <div class="menu-logo">Hamburger Menu</div>
-    <ul class="menu-list">
-      <li>Home</li>
-      <li>Shop</li>
-      <li>Products</li>
-      <li>Gallery</li>
-      <li>Books</li>
-      <li>Contact Us</li>
+  <!-- menu  -->
+  <nav class="menu">
+    <div class="menu__header">
+    </div>
+    <ul class="menu__list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Contact Us</a></li>
     <ul>
-  </div>
+  </nav>
 
-  <div class="menu-overlay"></div>
+  <!-- overlay  -->
+  <div class="menu__overlay"></div>
 
   <div class="main-container">
     <div class="avatar"></div>
