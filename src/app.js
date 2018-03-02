@@ -72,7 +72,7 @@
   function touchEnd(event) {
     var endDistance = Math.min(0, movedDistance - startDistance);
     $menu.style.transform = "";
-    if (endDistance < 0) {
+    if (endDistance < 0 && movedDistance !== 0) {
       hideMenu();
     }
   }
